@@ -2,6 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.HighlightText {
+      background: linear-gradient(to right, violet, lightblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
@@ -222,21 +233,57 @@ html {
     }
   
     .my-image {
-      max-width: 150px;
-      max-height: 150px;
+      max-width: 250px;
+      max-height: 250px;
     }
   }
 
 
 
   .projects {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #fa1b62;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    border: 2px solid #28c94b;
     height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  .project {
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(135deg, #3a3a6d, #6f6f9f);
+    padding: 1rem;
+    transition: background 300ms ease, transform 300ms ease;
+  }
+  
+ 
+
+  .project:hover {
+    background: linear-gradient(135deg, #4b4b7f, #8a8ab8);
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8); /* Increased glow effect */
+  }
+  
+  .project img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project h2 {
+    margin: 1rem 0 0.5rem;
+    
+  }
+  
+  .project p {
+    margin: 0;
+    color: black;
+    font-size: small;
   }
 
 
