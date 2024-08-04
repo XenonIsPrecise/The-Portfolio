@@ -287,5 +287,35 @@ a {
   }
 
 
-
+  .journey {
+    border: 2px solid #f7b801;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   
+  .jcontainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .jcontainer img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+  }
+  
+  .jcontainer:nth-child(odd) {
+    justify-content: flex-start;
+  }
+  
+  .textbox {
+    width: 45%;
+    color: black;
+    padding: 20px 30px;
+    background-color: lightyellow;
+    border-radius: 6px;
+    font-size: 15px;
+  }
