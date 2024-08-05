@@ -64,7 +64,8 @@
         </div>
         <img class="my-image" title="Sujal Acharya" src="Images/My_Image.jpg" alt="This is my Picture. This is how I Look like">
       </div>
-      <div id="Projects"></div>
+      <div id="Projects"></div> 
+      <div class="titleHeaders" data-value="My Projects">My Projects</div>
       <div class="projects">
         <a href="https://github.com/XenonIsPrecise/Chat_Bot">
           <div class="project">
@@ -100,9 +101,36 @@
       </div>
       </div>
       <div id="Journey"></div>
-      <h1>My Journey</h1>
+      <div class="titleHeaders" data-value="My Journey">My Journey</div>
+      <div class="journeyfilter">
+        <button class="filterbutton" onclick="filterSelection('all')">Show All</button>
+        <button class="filterbutton" onclick="filterSelection('FOJ')">Food and Other Jobs</button>
+        <button class="filterbutton" onclick="filterSelection('tech')">Tech and Related Jobs</button>
+        <button class="filterbutton" onclick="filterSelection('event')">Tech Events and Hackathons</button>
+        <button class="filterbutton" onclick="filterSelection('volunteer')">Volunteering</button>
+      </div>
       <div class="journey">
-        <div class="jcontainer l-container">
+        <div class="jcontainer l-container" data-="volunteer">
+          <div class="textbox">
+            <img src="" alt="Freelancing logo">
+            <h2>Google Devfest </h2>
+            <small>2023</small>
+            <p> 
+              Volunteered at Google Devfest 2023. It was a great experience and I learned a lot about event management and teamwork.
+            </p>
+          </div>
+        </div>
+        <div class="jcontainer l-container" data-="event">
+          <div class="textbox">
+            <img src="" alt="Freelancing logo">
+            <h2>UoftHacks 2023</h2>
+            <small>January 2023</small>
+            <p> 
+              Participiated in a hackathon called UoftHacks 2023. It was my first hackathon and I learned a lot about teamwork and problem solving. I worked on a project called <span class="HighlightText"><a href="https://play.unity.com/en/games/c1235ed8-92fd-46fe-a3da-19caa814dab5/spaceexev6">SpaceExe</a></span> which is a space exploration game.
+            </p>
+          </div>
+        </div>
+        <div class="jcontainer l-container" data-="tech">
           <div class="textbox">
             <img src="/Images/freelancing.png" alt="Freelancing logo">
             <h2>Freelancing</h2>
@@ -113,7 +141,7 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer r-container">
+        <div class="jcontainer r-container" data-="FOJ">
           <div class="textbox">
             <img src="/Images/quiznos.png" alt="Freelancing logo">
             <h2>Quiznos</h2>
@@ -121,7 +149,7 @@
             <p>Worked as a Sandwich Artist at Quiznos. It was my first job and I learned a lot about customer service and teamwork.</p>
           </div>
         </div>
-        <div class="jcontainer l-container">
+        <div class="jcontainer l-container" data-="FOJ">
           <div class="textbox">
             <img src="/Images/Amsterdam.avif" alt="Freelancing logo">
             <h2>Amsterdam Brewery</h2>
@@ -131,7 +159,7 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer r-container">
+        <div class="jcontainer r-container" data-="FOJ">
           <div class="textbox">
             <img src="/Images/barburrito.png" alt="Freelancing logo">
             <h2>barBurrito</h2>
