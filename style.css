@@ -435,6 +435,69 @@ a {
   }
 
 
+
+  .Skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-box {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    background-color: #444b5e;
+}
+
+.skill-details {
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: black;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.skill-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-details li {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    align-self: flex-start;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+
+
+
   .contact {
     display: flex;
     justify-content: space-evenly;

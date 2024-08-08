@@ -55,3 +55,17 @@ document.querySelectorAll(".titleHeaders").forEach(element => {
 
 
   
+
+document.querySelectorAll('.skill-box').forEach(box => {
+  box.addEventListener('click', function() {
+      document.querySelectorAll('.skill-box').forEach(b => b.style.display = 'none');
+      document.querySelector(`#${this.id.replace('Box', 'Details')}`).style.display = 'flex';
+  });
+});
+
+document.querySelectorAll('.back-button').forEach(button => {
+  button.addEventListener('click', function() {
+      document.querySelectorAll('.skill-details').forEach(details => details.style.display = 'none');
+      document.querySelectorAll('.skill-box').forEach(box => box.style.display = 'block');
+  });
+});
