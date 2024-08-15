@@ -437,11 +437,13 @@ a {
 
 
   .Skills {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    background-color: #000; /* Black background for the entire section */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .skill-box {
@@ -450,7 +452,6 @@ a {
     padding: 1rem;
     border-radius: 8px;
     cursor: pointer;
-    width: 45%;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -464,19 +465,50 @@ a {
     display: none;
     flex-direction: column;
     padding: 2rem;
-    background-color: #f8f9fa;
-    color: black;
+    background-color: #000; /* Black background for the skill-details */
+    color: white;
     border-radius: 8px;
     width: 100%;
 }
 
-.skill-details ul {
-    list-style-type: none;
-    padding: 0;
+.skill-section {
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.skill-details li {
-    margin-bottom: 10px;
+.skill-section h3 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #3f3f3f;
+  padding-bottom: 10px;
+}
+
+.skill-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.skill-section ul li {
+  color: #bfbfbf;
+  background-color: #333;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-section ul li:hover {
+  background-color: #00aaff;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .back-button {
@@ -494,7 +526,6 @@ a {
 .back-button:hover {
     background-color: #c0392b;
 }
-
 
 
 
