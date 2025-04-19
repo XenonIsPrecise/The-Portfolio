@@ -69,3 +69,29 @@ document.querySelectorAll('.back-button').forEach(button => {
       document.querySelectorAll('.skill-box').forEach(box => box.style.display = 'block');
   });
 });
+
+
+// Modal popup logic
+document.querySelectorAll('.jcontainer').forEach(container => {
+  container.addEventListener('click', function () {
+    const popupId = this.getAttribute('data-popup-id');
+    const popupContent = document.getElementById(popupId);
+
+    if (popupContent) {
+      document.getElementById('modal-body').innerHTML = popupContent.innerHTML;
+      document.getElementById('popupModal').style.display = 'flex';
+    }
+  });
+});
+
+document.querySelector('.close-button').addEventListener('click', () => {
+  document.getElementById('popupModal').style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+  const modal = document.getElementById('popupModal');
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+

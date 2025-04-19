@@ -392,8 +392,9 @@ a {
     flex-wrap: wrap;
   }
   
-  .filterbutton {
-    background-color: #f7b801;
+  .filterbutton { 
+    font-weight: bold;
+    background-color: #2b7954;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -571,3 +572,52 @@ a {
       width: 50px;
     }
   }
+
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    border: 2px solid #444;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    color: #f1f1f1;
+    position: relative;
+    box-shadow: 0 0 20px #000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close-button:hover {
+    color: #fff;
+  }
+  
