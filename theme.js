@@ -70,28 +70,17 @@ document.querySelectorAll('.back-button').forEach(button => {
   });
 });
 
+// Scroll to top button for the footer
+window.addEventListener("scroll", () => {
+  const footer = document.querySelector(".footer");
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.offsetHeight;
 
-// Modal popup logic
-document.querySelectorAll('.jcontainer').forEach(container => {
-  container.addEventListener('click', function () {
-    const popupId = this.getAttribute('data-popup-id');
-    const popupContent = document.getElementById(popupId);
-
-    if (popupContent) {
-      document.getElementById('modal-body').innerHTML = popupContent.innerHTML;
-      document.getElementById('popupModal').style.display = 'flex';
-    }
-  });
-});
-
-document.querySelector('.close-button').addEventListener('click', () => {
-  document.getElementById('popupModal').style.display = 'none';
-});
-
-window.addEventListener('click', function (e) {
-  const modal = document.getElementById('popupModal');
-  if (e.target === modal) {
-    modal.style.display = 'none';
+  if (scrollY + windowHeight >= documentHeight - 10) {
+    footer.classList.add("visible");
+  } else {
+    footer.classList.remove("visible");
   }
 });
 
