@@ -25,13 +25,12 @@
           </a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="#Skills" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#5b5b5e" d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 160 0 8.2 0c32.3-39.1 81.1-64 135.8-64c5.4 0 10.7 .2 16 .7l0-32.7c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM320 352l-96 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l296.2 0C335.1 449.6 320 410.5 320 368c0-5.4 .2-10.7 .7-16l-.7 0zm320 16a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zM496 288c8.8 0 16 7.2 16 16l0 48 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-64c0-8.8 7.2-16 16-16z"/></svg>
-            <span class="link-text">Skills</span>
+            <!-- <span class="link-text">Skills</span>
           </a>
-        </li>
-  
+        </li> -->
         <li class="nav-item">
           <a href="#Journey" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#5b5b5e" d="M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>
@@ -188,8 +187,8 @@
       <div class="journey">
         <div class="jcontainer l-container" data-="volunteer">
           <div class="textbox">
-            <h2>Google Devfest </h2>
-            <small>2023</small>
+            <h2 class="HighlightText">GDG Cloud (Google Devfest)</h2>
+            <i><b>2023 - Volunteered</b></i>
             <p> 
               Volunteered at Google Devfest 2023. It was a great experience and I learned a lot about event management and teamwork.
             </p>
@@ -197,8 +196,8 @@
         </div>
         <div class="jcontainer l-container" data-="event">
           <div class="textbox">
-            <h2>UoftHacks 2023</h2>
-            <small>January 2023</small>
+            <h2 class="HighlightText">UoftHacks X</h2>
+            <i><b>2023 - Participated</b></i>
             <p> 
               Participated in a hackathon called UoftHacks 2023. It was my first hackathon and I learned a lot about teamwork and problem solving. I worked on a project called <span class="HighlightText"><a href="https://play.unity.com/en/games/c1235ed8-92fd-46fe-a3da-19caa814dab5/spaceexev6">SpaceExe</a></span> which is a space exploration game.
             </p>
@@ -206,8 +205,8 @@
         </div>
         <div class="jcontainer l-container" data-="tech">
           <div class="textbox">         
-            <h2>Freelancing</h2>
-            <small>June 2024 - Present <i><b>Website Developer, Content Creator and Designer</b></i></small>
+            <h2 class="HighlightText">Freelancing</h2>
+            <i><b>June 2024 - Present</b></i>
             <p> 
               I started freelancing in January 2023. I have worked on various projects like website development, content creation, and designing. I have worked with clients from different countries and have learned a lot about freelancing.
               One of the websites I built while collaborating with a senior developer is <span class="HighlightText"><a href="https://tintprofilms.ca/">TintProFilms</a></span>
@@ -230,12 +229,12 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer r-container" data-="FOJ" data-popup-id="popupBarburrito">
+        <div class="jcontainer r-container" data-="FOJ" onclick="openPopup('popupBarburrito')">
           <div class="textbox">
             <h2>barBurrito</h2>
-            <small>November 2022 - Septeber 2023 <i><b>(Restaurant Crew)</b></i></small>
+            <small>November 2022 - September 2023 <i><b>(Restaurant Crew)</b></i></small>
             <p>
-              Worked as a Restaurant Crew at barBurrito. I learned a lot about food preparation and customer service. I prepared food like tacos, burritos and other mexican cusines, cleaned the restaurant, and served customers.
+              Worked as a Restaurant Crew at barBurrito. I learned a lot about food preparation and customer service. I prepared food like tacos, burritos and other Mexican cuisines, cleaned the restaurant, and served customers.
             </p>
           </div>
         </div>
@@ -286,5 +285,26 @@
       <p>Designed and Developed by Sujal Acharya</p>
     </div>
   </div>
+
+  <div id="popupBarburrito" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popupBarburrito')">&times;</span>
+      <h2 class="popup-heading">barBurrito</h2>
+      <p class="popup-description">
+        Worked as a Restaurant Crew at barBurrito. I learned a lot about food preparation and customer service.
+        I prepared food like tacos, burritos, cleaned the restaurant, and served customers.
+      </p>
+      <div class="popup-images">
+        <a href="Images/Certificates/ACPI_Hackathon.png" target="_blank">
+          <img src="Images/Certificates/ACPI_Hackathon.png" alt="Image 1">
+        </a>
+        <a href="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" target="_blank">
+          <img src="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" alt="Image 2">
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  
   <script src="script.js"></script>
   </body>

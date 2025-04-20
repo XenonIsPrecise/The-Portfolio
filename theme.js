@@ -56,19 +56,6 @@ document.querySelectorAll(".titleHeaders").forEach(element => {
 
   
 
-document.querySelectorAll('.skill-box').forEach(box => {
-  box.addEventListener('click', function() {
-      document.querySelectorAll('.skill-box').forEach(b => b.style.display = 'none');
-      document.querySelector(`#${this.id.replace('Box', 'Details')}`).style.display = 'flex';
-  });
-});
-
-document.querySelectorAll('.back-button').forEach(button => {
-  button.addEventListener('click', function() {
-      document.querySelectorAll('.skill-details').forEach(details => details.style.display = 'none');
-      document.querySelectorAll('.skill-box').forEach(box => box.style.display = 'block');
-  });
-});
 
 // Scroll to top button for the footer
 window.addEventListener("scroll", () => {
@@ -83,4 +70,27 @@ window.addEventListener("scroll", () => {
     footer.classList.remove("visible");
   }
 });
+
+
+// Popup functionality
+
+
+function openPopup(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// Optional: Close popup if user clicks outside of it
+window.addEventListener("click", function (event) {
+  const popups = document.querySelectorAll(".popup");
+  popups.forEach(popup => {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+
 
