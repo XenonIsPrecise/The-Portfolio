@@ -118,7 +118,7 @@
         <button class="filterbutton" onclick="filterSelection('volunteer')">Volunteering</button>
       </div>
       <div class="journey">
-        <div class="jcontainer l-container" data-="volunteer">
+        <div class="jcontainer l-c ontainer" data-="volunteer" onclick="openPopup('popupGDG')">
           <span class="tooltip">Click for more info and images</span>
           <div class="textbox">
             <h2 class="HighlightText">GDG Cloud (Google Devfest)</h2>
@@ -128,7 +128,7 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer l-container" data-="event">
+        <div class="jcontainer l-container" data-="event" onclick="openPopup('popupUoftHacks2023')">
           <span class="tooltip">Click for more info and images</span>
           <div class="textbox">
             <h2 class="HighlightText">UoftHacks X</h2>
@@ -138,9 +138,10 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer l-container" data-="tech">
+        <div class="jcontainer l-container" data-="tech" onclick="openPopup('popupFreelancing')">
           <div class="textbox">         
             <h2 class="HighlightText">Freelancing</h2>
+            <span class="tooltip">Click for more info and images</span>
             <i><b>June 2024 - Present</b></i>
             <p> 
               I started freelancing in January 2023. I have worked on various projects like website development, content creation, and designing. I have worked with clients from different countries and have learned a lot about freelancing.
@@ -148,16 +149,18 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer r-container" data-="FOJ">
+        <div class="jcontainer r-container" data-="FOJ" onclick="openPopup('popupQuiznos')">
           <div class="textbox">
             <h2 class="HighlightText">Quiznos</h2>
+            <span class="tooltip">Click for more info and images</span>
             <i><b>June 2024 - Present (Sandwich Artist)</b></i>
             <p>Worked as a Sandwich Artist at Quiznos. It was my first job and I learned a lot about customer service and teamwork.</p>
           </div>
         </div>
-        <div class="jcontainer l-container" data-="FOJ">
+        <div class="jcontainer l-container" data-="FOJ" onclick="openPopup('popupAmsterdam')">
           <div class="textbox">
             <h2 class="HighlightText">Amsterdam Brewery</h2>
+            <span class="tooltip">Click for more info and images</span>
             <i><b>December 2023 - June 2024(Packaging Technician)</b></i>
             <p>
               Worked as a Packaging Technician at Amsterdam Brewery. I learned a lot about the production process and quality control.
@@ -184,12 +187,12 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer l-container" data-="event">
+        <div class="jcontainer l-container" data-="event" onclick="openPopup('popupUoft2024')">
           <div class="textbox">
-            <h2 class="HighlightText">Hackathon 2023</h2>
-            <i><b>2023 - Participated</b></i>
+            <h2 class="HighlightText">Hackathon 2024</h2>
+            <i><b>2024 - Participated</b></i>
             <p>
-              Participated in a hackathon called Hackathon 2023. It was my first hackathon and I learned a lot about teamwork and problem solving.
+              Participated in a hackathon called Hackathon 2024. It was my first hackathon and I learned a lot about teamwork and problem solving.
             </p>
           </div>
       </div>
@@ -235,6 +238,63 @@
       <p>Designed and Developed by Sujal Acharya</p>
     </div>
   </div>
+
+  <div id="popupGDG" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popupGDG')">&times;</span>
+      <h2 class="popup-heading">Google Cloud</h2>
+      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
+      <p class="popup-description">
+        Volunteered at Google Devfest 2023. It was a great experience and I learned a lot about event management and teamwork.
+      </p>
+      <div class="popup-images">
+        <a href="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" target="_blank">
+          <img src="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" alt="Image 1">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popupUoftHacks2023" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popupUoftHacks2023')">&times;</span>
+      <h2 class="popup-heading">UoftHacks X</h2>
+      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
+      <p class="popup-description">
+        Participated in a hackathon called UoftHacks 2023. It was my first hackathon and I learned a lot about teamwork and problem solving. I worked on a project called <span class="HighlightText"><a href="https://play.unity.com/en/games/c1235ed8-92fd-46fe-a3da-19caa814dab5/spaceexev6">SpaceExe</a></span> which is a space exploration game.
+      </p>
+      <div class="popup-images">
+        <a href="Images/Certificates/UofTHacks_2023.jpg" target="_blank">
+          <img src="Images/Certificates/UofTHacks_2023.jpg" alt="Image 1">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="popupUoft2024" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popupUoft2024')">&times;</span>
+      <h2 class="popup-heading">Hackathon 2024</h2>
+      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
+      <p class="popup-description">
+        Participated in a hackathon called Hackathon 2024. It was my first hackathon and I learned a lot about teamwork and problem solving.
+      </p>
+    </div>
+  </div>
+
+  <div id="popupFreelancing" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popupFreelancing')">&times;</span>
+      <h2 class="popup-heading">Freelancing</h2>
+      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
+      <p class="popup-description">
+        I started freelancing in January 2023. I have worked on various projects like website development, content creation, and designing. I have worked with clients from different countries and have learned a lot about freelancing.
+        One of the websites I built while collaborating with a senior developer is <span class="HighlightText"><a href="https://tintprofilms.ca/">TintProFilms</a></span>
+      </p>
+    </div>
+
+  </div>  
 
   <div id="popupBarburrito" class="popup">
     <div class="popup-content">
