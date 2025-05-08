@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    filterSelection('all');
+    filterSelection('event'); // Show all events by default
   });
   
   function filterSelection(category) {
