@@ -94,3 +94,39 @@ window.addEventListener("click", function (event) {
 });
 
 
+//Skills Section
+document.addEventListener("DOMContentLoaded", () => {
+  let allOpen = false;
+
+  const headers = document.querySelectorAll(".skill-header");
+  const categories = document.querySelectorAll(".skill-category");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      allOpen = !allOpen;
+
+      categories.forEach(cat => {
+        if (allOpen) {
+          cat.classList.add("open");
+        } else {
+          cat.classList.remove("open");
+        }
+      });
+    });
+  });
+});
+
+// function toggleSkill(headerElement) {
+//   const category = headerElement.parentElement;
+//   const isOpen = category.classList.contains('open');
+
+//   // Close all
+//   document.querySelectorAll('.skill-category').forEach(cat => {
+//     cat.classList.remove('open');
+//   });
+
+//   // Open clicked if it wasn't already open
+//   if (!isOpen) {
+//     category.classList.add('open');
+//   }
+// }
