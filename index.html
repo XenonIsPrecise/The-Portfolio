@@ -98,101 +98,119 @@
 
 
 
+      <!-- Skills Section -->
+      <div id="Skills"></div>
+      <div class="titleHeaders" data-value="Skills">Skills</div>
+
+      <div class="skills-grid">
+
+        <!-- Comfortable With -->
+        <div class="skill-category">
+          <div class="skill-header" onclick="toggleSkill(this)">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Comfortable With</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fas fa-database"></i> MongoDB</li>
+            <li><i class="fas fa-server"></i> Express</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-code"></i> C#</li>
+            <li><i class="fab fa-android"></i> Flutter</li>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fab fa-figma"></i> Figma</li>
+            <li><i class="fas fa-database"></i> MySQL</li>
+            <li><i class="fas fa-code"></i> VS Code</li>
+          </ul>
+        </div>
+
+        <!-- Can Adapt Quickly -->
+        <div class="skill-category">
+          <div class="skill-header" onclick="toggleSkill(this)">
+            <i class="fas fa-bolt"></i>
+            <h3>Can Adapt Quickly</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fas fa-code"></i> TypeScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-paint-brush"></i> Tailwind CSS</li>
+            <li><i class="fas fa-fire"></i> Firebase</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-python"></i> Django</li>
+            <li><i class="fab fa-python"></i> Flask</li>
+            <li><i class="fas fa-c"></i> C</li>
+          </ul>
+        </div>
+
+        <!-- Wish to Learn -->
+        <div class="skill-category">
+          <div class="skill-header" onclick="toggleSkill(this)">
+            <i class="fas fa-book-reader"></i>
+            <h3>Learning / Future Tech</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fas fa-cube"></i> Rust</li>
+            <li><i class="fab fa-apple"></i> Swift</li>
+            <li><i class="fas fa-robot"></i> TensorFlow (Python AI)</li>
+            <li><i class="fas fa-brain"></i> PyTorch (Python AI)</li>
+            <li><i class="fas fa-chart-line"></i> Scikit-learn (Python AI)</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fas fa-terminal"></i> Vim</li>
+            <li><i class="fas fa-sync-alt"></i> CI/CD</li>
+            <li><i class="fab fa-aws"></i> AWS</li>
+          </ul>
+        </div>
+
+        <!-- Certifications -->
+          <div class="skill-category">
+            <div class="skill-header" onclick="toggleSkill(this)">
+              <i class="fas fa-certificate"></i>
+              <h3>Certifications</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <i class="fas fa-heartbeat"></i>
+                <a href="javascript:void(0)" onclick="openSkillCertModal(event, 'cert-cpr.jpg', 'CPR & First Aid')">CPR & First Aid</a>
+              </li>
+              <li>
+                <i class="fas fa-laptop"></i>
+                <a href="javascript:void(0)" onclick="openSkillCertModal(event, '/Images/Certificates/JHUWANI_COMMUNITY_LIBRARY_ComputerBasics_Completion.jpg', 'Digital Productivity & Computer Literacy Essentials')">Digital Productivity & Computer Literacy Essentials</a>
+              </li>
+              <li>
+                <i class="fas fa-mug-hot"></i>
+                <a href="javascript:void(0)" onclick="openSkillCertModal(event, '/Images/Certificates/Himalayan_Java_Training_Completion.jpg', 'Barista – Himalayan Java')">Barista – Himalayan Java</a>
+              </li>
+              <li>
+                <i class="fas fa-utensils"></i>
+                <a href="javascript:void(0)" onclick="openSkillCertModal(event, 'cert-foodhandler.jpg', 'Food Handlers (NB)')">Food Handlers (NB)</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Certificate Modal -->
+          <!-- Certificate Modal -->
+        <div id="skillCertModal" class="modal" onclick="backgroundClickClose(event)">
+          <div class="modal-content">
+            <span class="close" onclick="closeSkillCertModal()">&times;</span>
+            <h3 id="certTitle"></h3>
+            <img id="skillCertImage" src="" alt="Certificate" />
+            <a id="downloadBtn" href="" download class="download-btn">Download</a>
+          </div>
+        </div>
+      </div>
+      </div>
 
 
-<!-- Skills Section -->
-<div id="Skills"></div>
-<div class="titleHeaders" data-value="Skills">Skills</div>
 
-<div class="skills-grid">
-
-  <!-- Skill Section: Comfortable With -->
-  <div class="skill-category">
-    <div class="skill-header" onclick="toggleSkill(this)">
-      <i class="fas fa-laptop-code"></i>
-      <h3>Comfortable With</h3>
-      <i class="fas fa-chevron-down toggle-icon"></i>
-    </div>
-    <ul class="skill-list">
-      <li><i class="fab fa-js-square"></i> JavaScript</li>
-      <li><i class="fab fa-react"></i> React</li>
-      <li><i class="fab fa-node-js"></i> Node.js</li>
-      <li><i class="fab fa-html5"></i> HTML</li>
-      <li><i class="fab fa-css3-alt"></i> CSS</li>
-      <li><i class="fas fa-server"></i> Express.js</li>
-      <li><i class="fas fa-database"></i> MongoDB</li>
-      <li><i class="fas fa-terminal"></i> Git & CLI</li>
-    </ul>
-  </div>
-
-  <!-- Skill Section: Can Adapt Quickly -->
-  <div class="skill-category">
-    <div class="skill-header" onclick="toggleSkill(this)">
-      <i class="fas fa-bolt"></i>
-      <h3>Can Adapt Quickly</h3>
-      <i class="fas fa-chevron-down toggle-icon"></i>
-    </div>
-    <ul class="skill-list">
-      <li><i class="fab fa-vuejs"></i> Vue.js</li>
-      <li><i class="fas fa-code"></i> TypeScript</li>
-      <li><i class="fab fa-python"></i> Python</li>
-      <li><i class="fab fa-angular"></i> Angular</li>
-      <li><i class="fas fa-cloud"></i> Firebase</li>
-    </ul>
-  </div>
-
-  <!-- Skill Section: Learning -->
-  <div class="skill-category">
-    <div class="skill-header" onclick="toggleSkill(this)">
-      <i class="fas fa-book-reader"></i>
-      <h3>Learning / Future Tech</h3>
-      <i class="fas fa-chevron-down toggle-icon"></i>
-    </div>
-    <ul class="skill-list">
-      <li><i class="fas fa-cube"></i> Rust</li>
-      <li><i class="fas fa-layer-group"></i> Next.js</li>
-      <li><i class="fab fa-docker"></i> Docker</li>
-      <li><i class="fab fa-aws"></i> AWS</li>
-      <li><i class="fas fa-robot"></i> AI APIs (OpenAI)</li>
-    </ul>
-  </div>
-
-  <!-- Skill Section: Work Soft Skills -->
-  <div class="skill-category">
-    <div class="skill-header" onclick="toggleSkill(this)">
-      <i class="fas fa-users"></i>
-      <h3>Work & Soft Skills</h3>
-      <i class="fas fa-chevron-down toggle-icon"></i>
-    </div>
-    <ul class="skill-list">
-      <li><i class="fas fa-comments"></i> Communication</li>
-      <li><i class="fas fa-people-arrows"></i> Team Collaboration</li>
-      <li><i class="fas fa-clock"></i> Time Management</li>
-      <li><i class="fas fa-headset"></i> Customer Service</li>
-      <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
-      <li><i class="fas fa-handshake"></i> Adaptability</li>
-    </ul>
-  </div>
-
-  <!-- Skill Section: Certifications -->
-  <div class="skill-category">
-    <div class="skill-header" onclick="toggleSkill(this)">
-      <i class="fas fa-certificate"></i>
-      <h3>Certifications</h3>
-      <i class="fas fa-chevron-down toggle-icon"></i>
-    </div>
-    <ul class="skill-list">
-      <li><i class="fas fa-certificate"></i> FreeCodeCamp JavaScript</li>
-      <li><i class="fas fa-certificate"></i> Google Digital Garage</li>
-      <li><i class="fas fa-certificate"></i> Udemy React Bootcamp</li>
-      <li><i class="fas fa-certificate"></i> MongoDB University Basics</li>
-      <li><i class="fas fa-certificate"></i> GitHub Campus Expert Training</li>
-    </ul>
-  </div>
-
-</div>
-
-
+      <!-- Journey Section -->
 
       <div id="Journey"></div>
       <div class="titleHeaders" data-value="My Journey">My Journey</div>

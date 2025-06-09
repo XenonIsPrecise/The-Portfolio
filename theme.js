@@ -130,3 +130,35 @@ document.addEventListener("DOMContentLoaded", () => {
 //     category.classList.add('open');
 //   }
 // }
+
+
+
+// Skill Certificate Modal
+function openSkillCertModal(event, imageSrc, title) {
+  event.preventDefault();
+  const modal = document.getElementById('skillCertModal');
+  const img = document.getElementById('skillCertImage');
+  const certTitle = document.getElementById('certTitle');
+  const downloadBtn = document.getElementById('downloadBtn');
+
+  img.src = imageSrc;
+  certTitle.innerText = title;
+  downloadBtn.href = imageSrc;
+
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Prevent background scroll
+}
+
+function closeSkillCertModal() {
+  const modal = document.getElementById('skillCertModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = ''; // Re-enable background scroll
+}
+
+function backgroundClickClose(event) {
+  const modalContent = document.querySelector('.modal-content');
+  if (!modalContent.contains(event.target)) {
+    closeSkillCertModal();
+  }
+}
+

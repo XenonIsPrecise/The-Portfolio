@@ -721,3 +721,82 @@ a {
   }
 
   
+
+
+/* Skill Certificate Modal Styles */
+
+  /* Link color fix */
+.skill-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.skill-list li a:hover {
+  color: #15dfe6;
+  text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(21, 223, 230, 0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.modal-content h3 {
+  color: #15dfe6;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #15dfe6;
+  color: #111;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #28c94b;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
