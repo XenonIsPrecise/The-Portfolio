@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    filterSelection('event'); // Show all events by default
-  });
+  const savedCategory = localStorage.getItem('selectedJourneyFilter') || 'FOJ'; // <-- default changed
+  filterSelection(savedCategory);
+
+  const journeySection = document.getElementById('Journey');
+  if (journeySection) {
+    journeySection.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
   
+
   function filterSelection(category) {
     const containers = document.querySelectorAll('.jcontainer');
     

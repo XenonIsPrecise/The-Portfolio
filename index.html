@@ -190,7 +190,7 @@
               </li>
               <li>
                 <i class="fas fa-utensils"></i>
-                <a href="javascript:void(0)" onclick="openSkillCertModal(event, 'cert-foodhandler.jpg', 'Food Handlers (NB)')">Food Handlers (NB)</a>
+                <a href="javascript:void(0)" onclick="openSkillCertModal(event, '/Images/Certificates/foodHandler.jpg', 'Food Handlers (NB)')">Food Handlers (NB)</a>
               </li>
             </ul>
           </div>
@@ -265,6 +265,19 @@
           </div>
         </div>
 
+
+        <div class="jcontainer l-container" data-="volunteer" onclick="openPopup('popupQuizTarauli')">
+          <span class="tooltip">Click for more info and images</span>
+          <div class="textbox">
+            <h2 class="HighlightText">Quiz Competition - Tarauli Library</h2>
+            <i><b>2018 - Winner</b></i>
+            <p>
+              Secured first place in a quiz competition at Tarauli Library. It improved my general knowledge and quick thinking skills.
+            </p>
+          </div>
+        </div>
+
+
         <div class="jcontainer l-container" data-="volunteer" onclick="openPopup('popupShortStory')">
           <span class="tooltip">Click for more info and images</span>
           <div class="textbox">
@@ -320,26 +333,8 @@
             </p>
           </div>
         </div>
-        <div class="jcontainer r-container" data-="event" onclick="openPopup('popupUoft2024')">
-          <div class="textbox">
-            <h2 class="HighlightText">Hackathon 2024</h2>
-            <i><b>2024 - Participated</b></i>
-            <p>
-              Participated in a hackathon called Hackathon 2024. It was my second hackathon and I learned a lot about teamwork and problem solving. I worked on a project called <span class="HighlightText"><a href="https://play.unity.com/en/games/c1235ed8-92fd-46fe-a3da-19caa814dab5/spaceexev6">SpaceExe</a></span> which is a space exploration game.
-            </p>
-          </div>
-      </div>
-      <div class="jcontainer l-container" data-="event" onclick="openPopup('popupUoftHacks10')">
-        <span class="tooltip">Click for more info and images</span>
-        <div class="textbox">
-          <h2 class="HighlightText">UofTHacks X</h2>
-          <i><b>2023 - Participated</b></i>
-          <p>
-            Participated in UofTHacks 10 held at the University of Toronto. Gained valuable experience in tech collaboration and rapid development.
-          </p>
-        </div>
-      </div>
-      
+
+
       <div class="jcontainer r-container" data-="event" onclick="openPopup('popupUoftHacks11')">
         <span class="tooltip">Click for more info and images</span>
         <div class="textbox">
@@ -395,7 +390,7 @@
         </div>
       </div>
       
-      <div class="jcontainer l-container" data-="event" onclick="openPopup('popupHyperion')">
+      <div class="jcontainer l-container" data-="event" onclick="openPopup('popupHyperionHackathon')">
         <span class="tooltip">Click for more info and images</span>
         <div class="textbox">
           <h2 class="HighlightText">Hyperion Hackathon</h2>
@@ -406,7 +401,7 @@
         </div>
       </div>
       
-      <div class="jcontainer r-container" data-="event" onclick="openPopup('popupSpencer')">
+      <div class="jcontainer r-container" data-="event" onclick="openPopup('popupSpencerHackathon')">
         <span class="tooltip">Click for more info and images</span>
         <div class="textbox">
           <h2 class="HighlightText">Spencer Hackathon</h2>
@@ -575,100 +570,23 @@
     </div>
   </div>
 
-  <div id="popupGDG" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupGDG')">&times;</span>
-      <h2 class="popup-heading">Google Cloud</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        Volunteered at Google Devfest 2023. It was a great experience and I learned a lot about event management and teamwork. I also learned about Google Cloud and its services. I got a chance to meet many people from the tech community and learn from them.
-      </p>
-      <div class="popup-images">
-        <a href="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" target="_blank">
-          <img src="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" alt="Image 1">
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <div id="popupUoftHacks2023" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupUoftHacks2023')">&times;</span>
-      <h2 class="popup-heading">UoftHacks X</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        Participated in a hackathon called UoftHacks 2023. It was my first hackathon and I learned a lot about teamwork and problem solving. I worked on a project called <span class="HighlightText"><a href="https://play.unity.com/en/games/c1235ed8-92fd-46fe-a3da-19caa814dab5/spaceexev6">SpaceExe</a></span> which is a space exploration game.
-      </p>
-      <div class="popup-images">
-        <a href="Images/Certificates/UofTHacks_2023.jpg" target="_blank">
-          <img src="Images/Certificates/UofTHacks_2023.jpg" alt="Image 1">
-        </a>
-      </div>
-    </div>
-  </div>
+  <div id="popupContainer"></div>
 
 
-  <div id="popupUoft2024" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupUoft2024')">&times;</span>
-      <h2 class="popup-heading">Hackathon 2024</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        Participated in a hackathon called Hackathon 2024. It was my first hackathon and I learned a lot about teamwork and problem solving.
-      </p>
-    </div>
-  </div>
-
-  <div id="popupFreelancing" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupFreelancing')">&times;</span>
-      <h2 class="popup-heading">Freelancing</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        I started freelancing in January 2023. I have worked on various projects like website development, content creation, and designing. I have worked with clients from different countries and have learned a lot about freelancing.
-        One of the websites I built while collaborating with a senior developer is <span class="HighlightText"><a href="https://tintprofilms.ca/">TintProFilms</a></span>
-      </p>
-    </div>
-
-  </div>  
-
-  <div id="popupBarburrito" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupBarburrito')">&times;</span>
-      <h2 class="popup-heading">barBurrito</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        Worked as a Restaurant Crew at barBurrito. I learned a lot about food preparation and customer service.
-        I prepared food like tacos, burritos, cleaned the restaurant, and served customers.
-      </p>
-      <div class="popup-images">
-        <a href="Images/Certificates/ACPI_Hackathon.png" target="_blank">
-          <img src="Images/Certificates/ACPI_Hackathon.png" alt="Image 1">
-        </a>
-        <a href="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" target="_blank">
-          <img src="Images/Certificates/GDG_Cloud_Toronto_Volunteer.jpg" alt="Image 2">
-        </a>
-      </div>
-      
-    </div>
-  </div>
-
-  <div id="popupmunicipalitysurver" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('popupmunicipalitysurver')">&times;</span>
-      <h2 class="popup-heading">Municipality Survey</h2>
-      <hr style="border: none; border-top: 2px dashed #ccc;" />  <!-- Dashed line -->
-      <p class="popup-description">
-        I worked as a surveyor for the municipality. I surveyed the area and collected data for disaster risk management.
-        I learned a lot about data collection and analysis.
-      </p>
-      <div class="popup-images">
-        <a href="Images/Certificates/Municipality_Data_Collection.jpg" target="_blank">
-          <img src="Images/Certificates/Municipality_Data_Collection.jpg" alt="Image 1">
-        </a>
-      </div>
-    </div>
-  </div>
+  <script>
+    // Load external popup HTML into the popupContainer div
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('popups.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('popupContainer').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error loading popups:', error);
+        });
+    });
+  </script>
   
   <script src="script.js"></script>
   </body>
