@@ -811,3 +811,35 @@ a {
   margin: 0 auto;
 }
 
+
+
+
+/*Hackathon styles*/
+
+.popup-hackathon-content {
+  background-color: #0f0f0f;
+  border: 2px solid #15dfe6;
+  padding: 20px 25px;
+  border-radius: 12px;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.popup-hackathon-content .hackathon-bullets li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #f7b801;
+}
+
+.popup-hackathon-content a {
+  color: #15dfe6;
+  text-decoration: underline;
+}
+
+.popup-hackathon-content a:hover {
+  color: #e69a00;
+}
